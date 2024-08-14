@@ -1,13 +1,8 @@
-cd Desktop/
 mkdir Abanoub
-cd Abanoub/
 touch one.txt two.txt three.txt four.txt
 mkdir BAD
-cd BAD/
 touch bad.txt
-cd ../
 mv one.txt ../../Downloads 
-cd ../../Downloads
 cp one.txt copy.txt
 cd ../Desktop/Abanoub
 nano two.txt
