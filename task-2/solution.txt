@@ -6,7 +6,7 @@ touch greeting.txt
 echo "Hello world" >> greeting.txt
 git add .
 git commit -m "Added greeting"
-git checkout -b intro
+git checkout -b intro || git switch -c intro
 echo "I love Git" >> greeting.txt
 git add .
 git commit -m "Added I love Git"
