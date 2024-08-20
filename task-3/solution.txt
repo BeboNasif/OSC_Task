@@ -3,10 +3,9 @@ mkdir ~/project_files/reports ~/project_files/logs ~/project_files/data
 touch ~/project_files/reports/report1.md  ~/project_files/reports/report2.md
 touch ~/project_files/logs/system.log ~/project_files/logs/error.log  ~/project_files/logs/file1.pdf ~/project_files/logs/file2.pdf
 touch ~/project_files/data/data.csv ~/project_files/data/info.txt
-nano ~/project_files/reports/report1.md 
-nano ~/project_files/logs/system.log 
-nano ~/project_files/data/data.csv
+nano ~/project_files/reports/report1.md ~/project_files/logs/system.log ~/project_files/data/data.csv
 tar -cf logs_backup.tar project_files/logs/
+mv project_files/logs/logs_backup.tar project_files/
 tar -xf project_files/logs_backup.tar -C project_files/logs/  
 find -name "*.md"  
 find project_files/ -name "*.log"
